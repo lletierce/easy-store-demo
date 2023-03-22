@@ -27,7 +27,7 @@ const HomePageStyled = styled.div`
   .header{
     border: 1px solid cyan;
     background:#121212;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
   }
   .mainContent{
     border: 1px solid purple;
