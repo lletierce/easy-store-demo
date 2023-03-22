@@ -22,6 +22,8 @@ const HomePageStyled = styled.div`
                         "footer";
   grid-template-rows:    84px 1fr 122px;
 
+  
+
   .header{
     border: 1px solid cyan;
     background:#121212;
