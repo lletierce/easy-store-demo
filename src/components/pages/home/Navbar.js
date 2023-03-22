@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
 import Logo from './Logo';
+import { BsSearch } from 'react-icons/bs';
+import { AiOutlineUser } from 'react-icons/ai';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
 
 export default function Navbar() {
   return (
     <NavbarStyled>
         <div className='heading'><Logo /></div>
-        <div className='icons'>Icons</div>
+        <div className='icons'>
+          <span className='search'><BsSearch className='icon'/></span>
+          <span className='account'><AiOutlineUser className='icon'/></span>
+          <span className='cart'><HiOutlineShoppingBag className='icon'/></span>
+        </div>
     </NavbarStyled>
   )
 }
@@ -31,10 +38,62 @@ const NavbarStyled = styled.nav`
 
   .heading{
     border: 1px solid yellow;
+    display: flex;
+    align-items: center;
   }
   .icons{
     border: 1px solid yellow;
     display: flex;
     justify-content: center;
+
+    .search{
+      height: 44px;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        .icon{
+          font-size: 18px;
+          cursor: pointer;
+        &:hover {
+            color: #FFFFFF;
+            transform: scale(1.2);
+        }
+        }
+    }
+
+    .account{
+      height: 44px;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        font-size: 24px;
+        cursor: pointer;
+        &:hover {
+            color: #FFFFFF;
+            transform: scale(1.2);
+        }
+      }
+    }
+
+    .cart{
+      height: 44px;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        font-size: 24px;
+        cursor: pointer;
+        &:hover {
+            color: #FFFFFF;
+            transform: scale(1.2);
+        }
+      }
+    }
+
+    
   }
 `;
