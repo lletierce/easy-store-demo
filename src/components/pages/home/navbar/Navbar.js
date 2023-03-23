@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Logo from './Logo';
+import Logo from '../Logo';
 import NavbarIconsContainer from './NavbarIconsContainer';
 
 export default function Navbar() {
