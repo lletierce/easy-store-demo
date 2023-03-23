@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { theme } from '../../../theme/index';
 
 export default function Logo() {
   return (
@@ -8,13 +9,13 @@ export default function Logo() {
 }
 
 const LogoStyled = styled.span`
-    font-size: 24px;
+    font-size: ${theme.fonts.size.P3};
+    font-family: ${theme.fonts.family.Primary};
     text-transform: uppercase;
-    font-family: 'Assistant', sans-serif;
     letter-spacing: 0.6px;
 
     cursor: pointer;
     &:hover {
-            color: #FFFFFF;
+      color: #FFFFFF;
     }
 `;

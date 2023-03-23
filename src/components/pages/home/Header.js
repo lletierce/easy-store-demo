@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../../theme/index';
 import Navbar from './navbar/Navbar';
 
 export default function Header() {
@@ -10,6 +11,6 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.div`
-    background:#121212;
-    color: rgba(255, 255, 255, 0.7);
+    background: ${theme.colors.background_dark};
+    color: ${theme.colors.whiteSecondary}
 `;

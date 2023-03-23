@@ -25,8 +25,6 @@ const NavbarStyled = styled.nav`
   padding-right: 3rem;
   margin: 0 auto;
 
-  font-size: 24px;
-
   .heading{
     display: flex;
     align-items: center;

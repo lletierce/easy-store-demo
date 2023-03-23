@@ -3,6 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 import { AiOutlineUser } from 'react-icons/ai';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import Icon from '../../../reusable-ui/Icon';
+import { theme } from '../../../../theme/index';
 
 export default function NavbarIconsContainer() {
     return (
@@ -20,10 +21,10 @@ const NavbarIconsContainerStyled = styled.div`
     justify-content: center;
 
     .search{
-        font-size: 18px;
+        font-size: ${theme.fonts.size.P1};
     }
 
     .account, .cart{
-        font-size: 24px;
+        font-size: ${theme.fonts.size.P3};
     }
 `;

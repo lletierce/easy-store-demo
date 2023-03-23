@@ -43,6 +43,9 @@ const colors = {
       bold: 700,
       heavy: 800,
     },
+    family: {
+        Primary: "'Assistant', sans-serif",
+    }
   }
   
   export const theme = {
