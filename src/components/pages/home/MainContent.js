@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import Banner from './Banner';
 
 export default function MainContent() {
     return (
         <MainContentStyled>
-            <div className="banner">Banner</div>
+            <Banner />
             <div className="featured-collection">Collection</div>
         </MainContentStyled>
     )
@@ -18,10 +19,6 @@ const MainContentStyled = styled.div`
 
   @media screen and (max-width: 749px) {
     grid-template-rows: 390px 1fr;
-  }
-
-  .banner{
-    border: 2px solid red;
   }
 
   .featured-collection{
