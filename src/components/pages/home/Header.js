@@ -11,6 +11,6 @@ export default function Header() {
 }
 
 const HeaderStyled = styled.div`
-    background: ${theme.colors.background_dark};
+    background: ${theme.colors.primary_dark};
     color: ${theme.colors.whiteSecondary}
 `;
