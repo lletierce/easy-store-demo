@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import Banner from './Banner';
+import styled from 'styled-components'
+import Banner from './Banner'
+import FeaturedCollection from './FeaturedCollection'
 
 export default function MainContent() {
     return (
         <MainContentStyled>
             <Banner />
-            <div className="featured-collection">Collection</div>
+            <FeaturedCollection />
         </MainContentStyled>
     )
 }
@@ -19,9 +20,5 @@ const MainContentStyled = styled.div`
 
   @media screen and (max-width: 749px) {
     grid-template-rows: 390px 1fr;
-  }
-
-  .featured-collection{
-    border: 1px solid green;
   }
 `;
