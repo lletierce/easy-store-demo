@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import Header from './Header';
+import MainContent from './MainContent';
 
 export default function HomePage() {
   return (
     <HomePageStyled>
       <Header/>
-      <div className='mainContent'>MainContent</div>
+      <MainContent />
       <div className='footer'>Footer</div>
     </HomePageStyled>
   )
@@ -19,10 +20,7 @@ const HomePageStyled = styled.div`
                         "footer";
   grid-template-rows:    84px 1fr 122px;
 
-  .mainContent{
-    border: 1px solid purple;
-  }
   .footer{
-    border: 1px solid purple;
+    background: pink;
   }
 `;
