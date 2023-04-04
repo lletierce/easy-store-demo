@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { theme } from '../../../theme';
+import Card from '../../reusable-ui/Card';
 
 export default function FeaturedCollection() {
   return (
@@ -8,6 +9,10 @@ export default function FeaturedCollection() {
       <div className='featuredContent'>
           FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent
           FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
       </div>
     </FeaturedCollectionStyled>
   )
