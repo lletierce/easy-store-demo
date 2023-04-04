@@ -10,7 +10,7 @@ export default function Logo() {
 
 const LogoStyled = styled.span`
     font-size: ${theme.fonts.size.P3};
-    font-family: ${theme.fonts.family.Primary};
+    font-family: ${theme.fonts.family.primary};
     text-transform: uppercase;
     letter-spacing: 0.6px;
 

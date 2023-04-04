@@ -44,7 +44,7 @@ const colors = {
       heavy: 800,
     },
     family: {
-        Primary: "'Assistant', sans-serif",
+        primary: "'Assistant', sans-serif",
     }
   }
   
