@@ -12,7 +12,7 @@ export default function MainContent() {
 }
 
 const MainContentStyled = styled.div`
-  /* border: 1px solid blue; */
+  border: 2px solid blue;
   display: grid;
   grid-template-areas: "banner"
                         "collection";
