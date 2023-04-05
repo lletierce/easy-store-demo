@@ -1,18 +1,26 @@
 import styled from 'styled-components'
-import { theme } from '../../../theme';
-import Card from '../../reusable-ui/Card';
+import { theme } from '../../../theme'
+import Card from '../../reusable-ui/Card'
+import { sampleProducts2 } from "../../../sampleData/sampleProduct"
+import { useState } from 'react'
 
 export default function FeaturedCollection() {
+
+  const [product, setProduct] = useState(sampleProducts2)
+
   return (
     <FeaturedCollectionStyled>
       <h2>New Releases</h2>
       <div className='featuredContent'>
-          FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent
-          FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent FeaturedContent
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+          {product.map(({id, title, price}) =>{
+            return(
+              <Card
+                key={id}
+                title={title}
+                price={price} 
+              />
+            )
+          })}
       </div>
     </FeaturedCollectionStyled>
   )
@@ -39,6 +47,10 @@ const FeaturedCollectionStyled = styled.div`
 
   .featuredContent{
     border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    gap : 8px;    
   }
 
   @media screen and (max-width: 749px) {
