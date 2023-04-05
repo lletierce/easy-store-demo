@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Banner from './Banner'
+import Banner from '../Banner'
 import FeaturedCollection from './FeaturedCollection'
 
 export default function MainContent() {
