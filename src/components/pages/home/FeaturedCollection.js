@@ -3,6 +3,7 @@ import { theme } from '../../../theme'
 import Card from '../../reusable-ui/Card'
 import { sampleProducts2 } from "../../../sampleData/sampleProduct"
 import { useState } from 'react'
+import Title from '../../reusable-ui/Title'
 
 export default function FeaturedCollection() {
 
@@ -10,7 +11,7 @@ export default function FeaturedCollection() {
 
   return (
     <FeaturedCollectionStyled>
-      <h2>New Releases</h2>
+      <Title value={"NEW RELEASES"}/>
       <div className='featuredContent'>
           {product.map(({id, title, price}) =>{
             return(
@@ -37,14 +38,6 @@ const FeaturedCollectionStyled = styled.div`
   padding: 0px 50px 100px 50px;
   margin: 0 auto;
 
-  h2{
-    border: 1px solid green;
-    font-size: 40px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: ${theme.fonts.family.primary}
-  }
-
   .featuredContent{
     border: 1px solid green;
     display: flex;
@@ -55,10 +48,6 @@ const FeaturedCollectionStyled = styled.div`
 
   @media screen and (max-width: 749px) {
     padding: 0px 15px 75px 15px;
-
-    h2{
-      font-size: 30px;
-    }
   }
   
 `;
