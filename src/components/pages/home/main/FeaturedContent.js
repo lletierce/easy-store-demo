@@ -8,11 +8,12 @@ export default function FeaturedContent({ content }) {
 
     return (
         <FeaturedContentStyled>
-            {product.map(({ id, title, price }) => {
+            {product.map(({ id, title, imageSource,  price }) => {
                 return (
                     <Card
                         key={id}
                         title={title}
+                        imageSource={imageSource}
                         price={price}
                     />
                 )
@@ -23,9 +24,12 @@ export default function FeaturedContent({ content }) {
 
 const FeaturedContentStyled = styled.div`
   background: yellow;
-  border: 1px solid green;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   margin-top: 16px;
-  gap : 8px; 
+  */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap : 8px;
 `;
