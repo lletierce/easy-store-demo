@@ -17,7 +17,7 @@ const FeaturedCollectionStyled = styled.div`
   border: 2px solid red;
   
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   max-width: 1100px;
   
   /* top | right | bottom | left */

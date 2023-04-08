@@ -1,7 +1,7 @@
 export const sampleProducts1 = [
     {
         id: 1,
-        imageSource: "/images/sampleProduct/product1.png",
+        imageSource: "FAT",
         title: "2 Posters :《FUTURE & PAST》&《THE LAIR》",
         price: 2.40,
         quantity: 500,
@@ -10,7 +10,7 @@ export const sampleProducts1 = [
     },
     {
         id: 2,
-        imageSource: "/images/sampleProduct/product1.png",
+        imageSource: "FAT",
         title: "Acrylic Keychain",
         price: 9.000,
         quantity: 200,

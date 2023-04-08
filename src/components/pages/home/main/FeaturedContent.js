@@ -8,13 +8,10 @@ export default function FeaturedContent({ content }) {
 
     return (
         <FeaturedContentStyled>
-            {product.map(({ id, title, imageSource,  price }) => {
+            {product.map(({ id }) => {
                 return (
                     <Card
                         key={id}
-                        title={title}
-                        imageSource={imageSource}
-                        price={price}
                     />
                 )
             })}
@@ -23,13 +20,16 @@ export default function FeaturedContent({ content }) {
 }
 
 const FeaturedContentStyled = styled.div`
-  background: yellow;
-  /* display: flex;
-  flex-wrap: wrap;
-  margin-top: 16px;
-  */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap : 8px;
+    
+    background: yellow;
+    /* display: flex;
+    flex-wrap: wrap; */
+  
+    @media screen and (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap : 8px;
+    }
+
 `;

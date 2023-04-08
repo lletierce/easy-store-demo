@@ -8,7 +8,7 @@ export default function Title({ value }) {
 }
 
 const TitleStyled = styled.h2`
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-family: ${theme.fonts.family.primary};
     color: ${theme.colors.primary_dark};
     
