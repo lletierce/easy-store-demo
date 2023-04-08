@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import Card from '../../../reusable-ui/Card'
+import { formatPrice} from "../../../../utils/maths"
 
 export default function FeaturedContent({ content }) {
 
@@ -8,10 +9,14 @@ export default function FeaturedContent({ content }) {
 
     return (
         <FeaturedContentStyled>
-            {product.map(({ id }) => {
+            {product.map(({ id, imageSource, title, price_regular, price_sale }) => {
                 return (
                     <Card
                         key={id}
+                        imageSource={imageSource}
+                        title={title}
+                        price_regular={formatPrice(price_regular)}
+                        price_sale={formatPrice(price_sale)}
                     />
                 )
             })}
@@ -21,7 +26,7 @@ export default function FeaturedContent({ content }) {
 
 const FeaturedContentStyled = styled.div`
     
-    background: yellow;
+    /* background: yellow; */
     /* display: flex;
     flex-wrap: wrap; */
   

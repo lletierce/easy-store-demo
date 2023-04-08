@@ -14,7 +14,7 @@ export default function FeaturedCollection() {
 }
 
 const FeaturedCollectionStyled = styled.div`
-  border: 2px solid red;
+  /* border: 2px solid red; */
   
   display: flex;
   flex-direction: column;
