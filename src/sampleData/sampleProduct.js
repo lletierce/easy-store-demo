@@ -11,7 +11,7 @@ export const sampleProducts1 = [
     },
     {
         id: 2,
-        imageSource: "/images/sampleProduct/product1FAT.png",
+        imageSource: "/images/sampleProduct/product2FAT.png",
         title: "Acrylic Keychain",
         price_regular: 8.000,
         price_sale: 2.400,
@@ -34,7 +34,7 @@ export const sampleProducts2 = [
     },
     {
         id: 2,
-        imageSource: "/images/sampleProduct/product1FAT.png",
+        imageSource: "/images/sampleProduct/product2FAT.png",
         title: "Acrylic Keychain",
         price_regular: 8.000,
         price_sale: 2.400,
@@ -44,7 +44,7 @@ export const sampleProducts2 = [
     },
     {
         id: 3,
-        imageSource: "/images/sampleProduct/product1FAT.png",
+        imageSource: "/images/sampleProduct/product3FAT.png",
         title: "Doujin Book 32 pages(R/V) 18 cm x 25,50 cm",
         price_regular: 25.00,
         price_sale: 12.50,
@@ -54,7 +54,7 @@ export const sampleProducts2 = [
     },
     {
         id: 4,
-        imageSource: "/images/sampleProduct/product1FAT.png",
+        imageSource: "/images/sampleProduct/product4FAT.png",
         title: "Enamel Gold Pin",
         price_regular: 10.00,
         price_sale: 3.000,
@@ -64,7 +64,7 @@ export const sampleProducts2 = [
     },
     {
         id: 5,
-        imageSource: "/images/sampleProduct/product1FAT.png",
+        imageSource: "/images/sampleProduct/product5FAT.png",
         title: "Saru Mousepad",
         price_regular: 29.999,
         price_sale: 15.000,
