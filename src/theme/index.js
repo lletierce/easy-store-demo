@@ -1,6 +1,6 @@
 const colors = {
-    white: "##FFFFFF",
-    whiteSecondary: "rgba(255, 255, 255, 0.7)",
+    white: "#ffffff",
+    whiteSecondary: "#b3b3b3",	
     background_white: "#f5f5f7",
     background_whiteSecondary: "#F3F3F3",
     primary_dark: "#121212",

@@ -19,5 +19,5 @@ const HomePageStyled = styled.div`
   grid-template-areas:  "header"
                         "maincontent"
                         "footer";
-  grid-template-rows:    84px 1fr 122px;
+  grid-template-rows:    84px 1fr 132px;
 `;
