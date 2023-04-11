@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Header from './Header';
-import MainContent from './MainContent';
+import styled from 'styled-components'
+import Header from './Header'
+import MainContent from './main/MainContent'
 
 export default function HomePage() {
   return (
