@@ -27,10 +27,6 @@ export default function FeaturedContent({ content }) {
 
 const FeaturedContentStyled = styled.div`
     
-    /* background: yellow; */
-    /* display: flex;
-    flex-wrap: wrap; */
-  
     @media screen and (min-width: 990px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

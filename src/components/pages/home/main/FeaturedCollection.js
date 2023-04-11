@@ -13,9 +13,7 @@ export default function FeaturedCollection() {
   )
 }
 
-const FeaturedCollectionStyled = styled.div`
-  /* border: 2px solid red; */
-  
+const FeaturedCollectionStyled = styled.div`  
   display: flex;
   flex-direction: column;
   max-width: 1100px;
