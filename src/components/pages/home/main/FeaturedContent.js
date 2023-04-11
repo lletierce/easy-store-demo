@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import Card from '../../../reusable-ui/Card'
+import Card from '../../../reusable-ui/Card/Card'
 import { formatPrice} from "../../../../utils/maths"
+
 
 export default function FeaturedContent({ content }) {
 
