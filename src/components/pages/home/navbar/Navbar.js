@@ -1,32 +1,49 @@
 import styled from 'styled-components';
 import Logo from '../Logo';
-import NavbarIconsContainer from './NavbarIconsContainer';
+import NavbarRightSide from './NavbarRightSide';
+import NavbarLeftSide from './NavbarLeftSide';
 
 export default function Navbar() {
   return (
     <NavbarStyled>
-        <div className='heading'><Logo /></div>
-        <NavbarIconsContainer />
+      <NavbarLeftSide />
+      <div className='heading'><Logo /></div>
+      <NavbarRightSide />
     </NavbarStyled>
   )
 }
 
 const NavbarStyled = styled.nav`
-  
-  width: 1100px; 
+  max-width: 1100px; 
   display: grid;
-  grid-template-areas: "heading icons";
-  grid-template-columns: 1fr 120px;
+  grid-template-areas: "search heading icons";
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
   column-gap: 1.5rem;
   
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  /* top | right | bottom | left */
+  padding: 10px 15px 10px 15px;
   margin: 0 auto;
 
   .heading{
     display: flex;
-    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 750px) and (max-width: 989px) { 
+    padding: 10px 50px 10px 50px;
+   }
+
+
+  @media screen and (min-width: 990px) {
+    display: grid;
+    grid-template-areas: "heading icons";
+    grid-template-columns: 2fr 1fr;
+
+    padding: 20px 50px 20px 50px;
+
+    .heading{
+      justify-content: flex-start;
+    }
   }
 `;
