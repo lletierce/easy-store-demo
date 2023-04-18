@@ -18,6 +18,8 @@ const MainContentStyled = styled.div`
                         "collection";
   grid-template-rows: 720px 1fr;
 
+  margin-bottom: 75px;
+
   @media screen and (max-width: 749px) {
     grid-template-rows: 390px 1fr;
   }
