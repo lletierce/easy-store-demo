@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { theme } from '../../../theme'
-import CardMedia from './CardMedia';
-import CardInfo from './CardInfo';
+import CardMedia from './CardMedia'
+import CardInfo from './CardInfo'
 
 export default function Card({imageSource, title, price_regular, price_sale}) {
   return (

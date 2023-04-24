@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { BsSearch } from 'react-icons/bs'
-import Icon from '../../../reusable-ui/Icon';
-import { theme } from '../../../../theme';
+import Icon from '../../../reusable-ui/Icon'
+import { theme } from '../../../../theme'
 
 export default function NavbarLeftSide() {
   return (
