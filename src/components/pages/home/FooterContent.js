@@ -19,18 +19,18 @@ const FooterContentStyled = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 25px;
+  column-gap: ${theme.spacing.md};
 
-  /* top | right | bottom | left */
-  padding: 25px 25px 30px 25px;
+  padding: ${theme.spacing.md};
+  padding-bottom: ${theme.spacing.lg};
 
   p{
     font-family: ${theme.fonts.family.primary};
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: calc(${theme.fonts.size.P0} + 0.1rem);
+    font-weight: ${theme.fonts.weights.regular};
 
-    margin-top: 3px;
-    margin-bottom: 3px;
+    /* vertical | horizontal */
+    margin: ${theme.spacing.xxs} 0;
 
     cursor: pointer;
     &:hover {

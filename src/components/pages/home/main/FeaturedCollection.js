@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { sampleProducts2 } from "../../../../sampleData/sampleProduct"
 import Title from '../../../reusable-ui/Title'
 import FeaturedContent from './FeaturedContent'
+import { theme } from '../../../../theme'
 
 export default function FeaturedCollection() {
 
@@ -18,12 +19,14 @@ const FeaturedCollectionStyled = styled.div`
   flex-direction: column;
   max-width: 1100px;
   
-  /* top | right | bottom | left */
-  padding: 0px 50px 100px 50px;
+  /* vertical | horizontal */
+  padding: ${theme.spacing.xxl} calc(${theme.spacing.sm} * 1.5);
+  padding-top: 0px;
   margin: 0 auto;
 
-  @media screen and (max-width: 749px) {
-    padding: 0px 15px 75px 15px;
+  @media screen and (min-width: 750px) {
+    padding: calc(${theme.spacing.xl} * 2) ${theme.spacing.xl};
+    padding-top: 0px;
   }
   
 `;

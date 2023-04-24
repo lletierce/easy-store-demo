@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export default function Banner() {
   return (
@@ -18,8 +18,6 @@ export default function Banner() {
 }
 
 const BannerStyled = styled.div`
-    /* border: 2px solid red; */
-
     img{
       width: 100%;
       height: 100%;

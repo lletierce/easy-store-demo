@@ -12,13 +12,13 @@ const colors = {
   }
   
   const spacing = {
-    xxs: "4px",
-    xs: "8px",
-    sm: "12px",
-    md: "20px",
-    lg: "32px",
-    xl: "52px",
-    xxl: "84px",
+    xxs: "3px",
+    xs: "5px",
+    sm: "10px",
+    md: "25px",
+    lg: "30px",
+    xl: "50px",
+    xxl: "75px",
   }
   
   const fonts = {
