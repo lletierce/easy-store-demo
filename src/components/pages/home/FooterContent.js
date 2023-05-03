@@ -8,7 +8,9 @@ export default function FooterContent() {
         <Link to={"/terms-of-services"}>
           <p>Terms & Conditions</p>
         </Link>
-        <p>Privacy Policy</p>
+        <Link to={"/privacy-policy"}>
+          <p>Privacy Policy</p>
+        </Link>
         <p>Shipping & Refunds</p>
         <p>Legal Mentions</p>
         <p>F.A.Q</p>
