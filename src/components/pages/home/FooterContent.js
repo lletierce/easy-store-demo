@@ -14,7 +14,9 @@ export default function FooterContent() {
         <Link to={"/shipping-payment-info"}>
           <p>Shipping & Refunds</p>
         </Link>
-        <p>Legal Mentions</p>
+        <Link to={"/legal-mentions"}>
+          <p>Legal Mentions</p>
+        </Link>
         <p>F.A.Q</p>
         <p>Contact Us</p>
     </FooterContentStyled>
