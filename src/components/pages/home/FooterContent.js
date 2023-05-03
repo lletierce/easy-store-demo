@@ -11,7 +11,9 @@ export default function FooterContent() {
         <Link to={"/privacy-policy"}>
           <p>Privacy Policy</p>
         </Link>
-        <p>Shipping & Refunds</p>
+        <Link to={"/shipping-payment-info"}>
+          <p>Shipping & Refunds</p>
+        </Link>
         <p>Legal Mentions</p>
         <p>F.A.Q</p>
         <p>Contact Us</p>
