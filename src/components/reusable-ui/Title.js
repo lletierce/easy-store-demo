@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import { theme } from '../../theme'
 
-export default function Title({ value }) {
+export default function Title({ value, className }) {
   return (
-    <TitleStyled>{value}</TitleStyled>
+    <TitleStyled className={className}>{value}</TitleStyled>
   )
 }
 

@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 import { theme } from '../../../theme'
+import { Link } from 'react-router-dom'
 
 export default function FooterContent() {
   return (
     <FooterContentStyled>
-        <p>Terms & Conditions</p>
+        <Link to={"/terms-of-services"}>
+          <p>Terms & Conditions</p>
+        </Link>
         <p>Privacy Policy</p>
         <p>Shipping & Refunds</p>
         <p>Legal Mentions</p>
@@ -36,5 +39,10 @@ const FooterContentStyled = styled.div`
     &:hover {
       color: ${theme.colors.white};
     }
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
   }
 `;
