@@ -17,7 +17,9 @@ export default function FooterContent() {
         <Link to={"/legal-mentions"}>
           <p>Legal Mentions</p>
         </Link>
-        <p>F.A.Q</p>
+        <Link to={"/f-a-q"}>
+          <p>F.A.Q</p>
+        </Link>
         <p>Contact Us</p>
     </FooterContentStyled>
   )

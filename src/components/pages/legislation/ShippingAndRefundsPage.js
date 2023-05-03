@@ -8,7 +8,7 @@ export default function ShippingAndRefundsPage() {
   return (
     <ShippingAndRefundsPageStyled>
       <Header/>
-      <div class="content">
+      <div className="content">
       <Title value={"Shipping & Refunds"} className={"title-shippingAndRefunds"}/>
         <div>
           <p>
