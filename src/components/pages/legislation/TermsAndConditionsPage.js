@@ -267,7 +267,6 @@ const TermsAndConditionsPageStyled = styled.div`
   }
 
   @media screen and (min-width: 750px) {
-    grid-template-rows: 84px 1fr 132px;
 
     .content{
       padding: 28px 90px;
