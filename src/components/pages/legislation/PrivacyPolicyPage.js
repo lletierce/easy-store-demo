@@ -8,7 +8,7 @@ export default function PrivacyPolicyPage() {
   return (
     <PrivacyPolicyPageStyled>
         <Header/>
-        <div class="content">
+        <div className="content">
             <Title value={"Privacy Policy"} className={"title-privacyPolicy"}/>
             <div>
                 <p>
