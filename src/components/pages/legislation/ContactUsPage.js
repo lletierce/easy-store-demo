@@ -1,23 +1,81 @@
 import styled from 'styled-components'
 import TextInput from '../../reusable-ui/TextInput'
 import Title from '../../reusable-ui/Title'
+import Header from '../home/Header'
+import Footer from '../home/Footer'
 
 export default function ContactUsPage() {
   return (
     <ContactUsPageStyled>
-        <Title value={"Contact"} />
-        <TextInput type={'text'} label={'Phone number'}/>
-        <TextInput type={'password'} label={'Password'}/>
-        <TextInput label={'Name'}/>
+        <Header/>
+        <div className="content">
+            <Title value={"Contact"} className={"title-contactUs"} />
+            <form action="">
+                <div className='contact_fields'>
+                    <TextInput label={'Name'}/>
+                    <TextInput label={'Email'}/>
+                </div>
+                <TextInput label={'Phone number'}/>
+                <TextInput label={'Comment'} type={"text"}/>
+                <button>Send</button>
+            </form>
+        </div>
+        <Footer/>
     </ContactUsPageStyled>
   )
 }
 
 const ContactUsPageStyled = styled.div`
-    /* background: orange; */
-    
-    min-height: 405px;
-    max-width: 726px;
-    
-    margin: 100px auto;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"header"
+                        "maincontent"
+                        "footer";
+    grid-template-rows:    64px 1fr 132px;
+
+    .content{
+        background: orange;
+        
+        max-width: 1200px;
+        width: 100%;
+        box-sizing: border-box;
+        height: max-content;
+
+        margin: 0 auto 100px;
+        padding: 75px 15px 0;
+
+        .title-contactUs{
+            margin: 0 0 30px;
+            font-size: 40px;
+            text-transform: capitalize;
+            letter-spacing: 0.6px;
+        
+            @media screen and (max-width: 749px) {
+                font-size: 30px;
+                margin-bottom: 20px;
+                line-height: 39px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 750px) {
+        .content{
+            padding: 100px 90px 0;
+        }
+
+        .contact_fields{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 990px) {
+        grid-template-rows: 84px 1fr 132px;
+
+        .content{
+            max-width: 726px;
+            padding: 100px 0 0;
+        }
+  }
 `;
