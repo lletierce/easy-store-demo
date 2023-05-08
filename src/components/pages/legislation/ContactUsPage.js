@@ -4,6 +4,7 @@ import Title from '../../reusable-ui/Title'
 import Header from '../home/Header'
 import Footer from '../home/Footer'
 import PrimaryButton from '../../reusable-ui/PrimaryButton'
+import TextAreaInput from '../../reusable-ui/TextAreaInput'
 
 export default function ContactUsPage() {
   return (
@@ -17,7 +18,8 @@ export default function ContactUsPage() {
                     <TextInput label={'Email'}/>
                 </div>
                 <TextInput label={'Phone number'}/>
-                <TextInput label={'Comment'} type={"text"}/>
+                {/* <TextInput label={'Comment'} type={"text"}/> */}
+                <TextAreaInput label={"Comment"}/>
                 <PrimaryButton label={"Send"} className={"btn_send"}/>
             </form>
         </div>
