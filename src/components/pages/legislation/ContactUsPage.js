@@ -3,6 +3,7 @@ import TextInput from '../../reusable-ui/TextInput'
 import Title from '../../reusable-ui/Title'
 import Header from '../home/Header'
 import Footer from '../home/Footer'
+import PrimaryButton from '../../reusable-ui/PrimaryButton'
 
 export default function ContactUsPage() {
   return (
@@ -17,7 +18,7 @@ export default function ContactUsPage() {
                 </div>
                 <TextInput label={'Phone number'}/>
                 <TextInput label={'Comment'} type={"text"}/>
-                <button>Send</button>
+                <PrimaryButton label={"Send"} className={"btn_send"}/>
             </form>
         </div>
         <Footer/>
@@ -34,7 +35,7 @@ const ContactUsPageStyled = styled.div`
     grid-template-rows:    64px 1fr 132px;
 
     .content{
-        background: orange;
+        /* background: orange; */
         
         max-width: 1200px;
         width: 100%;
@@ -58,15 +59,27 @@ const ContactUsPageStyled = styled.div`
         }
     }
 
+    .content .btn_send{
+        margin-top: 30px;
+    }
+
+    .content .title-contactUs{
+        margin-bottom: 20px;
+    }
+
     @media screen and (min-width: 750px) {
         .content{
             padding: 100px 90px 0;
         }
 
-        .contact_fields{
+        .content .contact_fields{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 20px;
+        }
+
+        .content .btn_send{
+            margin-top: 40px;
         }
     }
 
@@ -76,6 +89,10 @@ const ContactUsPageStyled = styled.div`
         .content{
             max-width: 726px;
             padding: 100px 0 0;
+        }
+
+        .content .title-contactUs{
+            margin-bottom: 30px;
         }
   }
 `;
