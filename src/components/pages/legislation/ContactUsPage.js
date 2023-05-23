@@ -5,25 +5,38 @@ import Header from '../home/Header'
 import Footer from '../home/Footer'
 import PrimaryButton from '../../reusable-ui/PrimaryButton'
 import TextAreaInput from '../../reusable-ui/TextAreaInput'
+import ErrorFormMessage from '../error/ErrorFormMessage'
+import { useState } from 'react'
 
 export default function ContactUsPage() {
-  return (
-    <ContactUsPageStyled>
-        <Header/>
-        <div className="content">
-            <Title value={"Contact"} className={"title-contactUs"} />
-            <form action="">
-                <div className='contact_fields'>
-                    <TextInput label={'Name'}/>
-                    <TextInput label={'Email'}/>
-                </div>
-                <TextInput label={'Phone number'}/>
-                {/* <TextInput label={'Comment'} type={"text"}/> */}
-                <TextAreaInput label={"Comment"}/>
-                <PrimaryButton label={"Send"} className={"btn_send"}/>
-            </form>
-        </div>
-        <Footer/>
+    // state
+    const [isError, setIsError] = useState(true)
+    
+    // comportement
+    const handleSubmit = (event) => { 
+        event.preventDefault()
+        setIsError(!isError)
+     }
+
+    // rendering
+    return (
+        <ContactUsPageStyled>
+            <Header/>
+            <div className="content">
+                <Title value={"Contact"} className={"title-contactUs"} />
+                {isError && <ErrorFormMessage />}
+                {/* <ErrorFormMessage /> */}
+                <form action="submit" onSubmit={handleSubmit}>
+                    <div className='contact_fields'>
+                        <TextInput label={'Name'}/>
+                        <TextInput label={'Email'}/>
+                    </div>
+                    <TextInput label={'Phone number'}/>
+                    <TextAreaInput label={"Comment"}/>
+                    <PrimaryButton label={"Send"} className={"btn_send"}/>
+                </form>
+            </div>
+            <Footer/>
     </ContactUsPageStyled>
   )
 }
