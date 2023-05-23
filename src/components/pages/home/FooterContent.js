@@ -20,7 +20,9 @@ export default function FooterContent() {
         <Link to={"/f-a-q"}>
           <p>F.A.Q</p>
         </Link>
-        <p>Contact Us</p>
+        <Link to={"/contact"}>
+          <p>Contact Us</p>
+        </Link>
     </FooterContentStyled>
   )
 }

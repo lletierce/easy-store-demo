@@ -6,6 +6,7 @@ import PrivacyPolicyPage from "./components/pages/legislation/PrivacyPolicyPage"
 import ShippingAndRefundsPage from "./components/pages/legislation/ShippingAndRefundsPage"
 import LegalMentionsPage from "./components/pages/legislation/LegalMentionsPage"
 import FAQPage from "./components/pages/legislation/FAQPage"
+import ContactUsPage from "./components/pages/legislation/ContactUsPage"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/shipping-payment-info" element={<ShippingAndRefundsPage/>}/>
       <Route path="/legal-mentions" element={<LegalMentionsPage/>}/>
       <Route path="/f-a-q" element={<FAQPage/>}/>
+      <Route path="/contact" element={<ContactUsPage/>}/>
       <Route path="*" element={<ErrorPage />}/>
     </Routes>
   );
