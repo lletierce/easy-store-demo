@@ -7,15 +7,19 @@ import PrimaryButton from '../../reusable-ui/PrimaryButton'
 import TextAreaInput from '../../reusable-ui/TextAreaInput'
 import ErrorFormMessage from '../error/ErrorFormMessage'
 import { useState } from 'react'
+import { theme } from '../../../theme'
+import SuccessFormMessage from './SuccessFormMessage'
 
 export default function ContactUsPage() {
     // state
-    const [isError, setIsError] = useState(true)
+    const [isError, setIsError] = useState(false)
+    const [isSuccess, setIsSuccess] = useState(false)  
     
     // comportement
     const handleSubmit = (event) => { 
         event.preventDefault()
-        setIsError(!isError)
+        // setIsError(!isError)
+        setIsSuccess(!isSuccess)
      }
 
     // rendering
@@ -25,7 +29,7 @@ export default function ContactUsPage() {
             <div className="content">
                 <Title value={"Contact"} className={"title-contactUs"} />
                 {isError && <ErrorFormMessage />}
-                {/* <ErrorFormMessage /> */}
+                {isSuccess && <SuccessFormMessage />}
                 <form action="submit" onSubmit={handleSubmit}>
                     <div className='contact_fields'>
                         <TextInput label={'Name'}/>
