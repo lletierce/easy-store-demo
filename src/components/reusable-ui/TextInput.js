@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { theme } from '../../theme';
+import { theme } from '../../theme'
 
 export default function TextInput({type = "text", label }) {
+    // state
     const [value, setValue] = useState('');
 
+    // comportement
     function handleChange(e){
         setValue(e.target.value);
     }
 
+    // rendering
     return (
     <TextInputStyled>
         <input type={type} value={value} onChange={handleChange} />
@@ -27,27 +30,22 @@ const TextInputStyled = styled.div`
 
     font-family: ${theme.fonts.family.primary};
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    /* margin-bottom: calc(${theme.spacing.sm}*2); */
 
+    @media screen and (min-width: 750px) {
+        margin-bottom: 20px;
+    }
 
 
     :focus-within label, .filled{
         color: rgba(18, 18, 18, 0.75);
-        font-size: 10px;
+        font-size: ${theme.fonts.size.XXS};
         letter-spacing: 0.4px;
-        line-height: 15px;
-        
-        top: 6px;
+        line-height: ${theme.fonts.size.SM};
+        top: calc(${theme.spacing.xxs}*2);
     }
 
-    /* .filled{
-        color: rgba(18, 18, 18, 0.75);
-        font-size: 10px;
-        letter-spacing: 0.4px;
-        line-height: 15px;
-        
-        top: 6px;
-    } */
 
     label{
         font-size: 16px;
@@ -75,14 +73,13 @@ const TextInputStyled = styled.div`
         width: 100%;
         min-width:72px;
         box-sizing: border-box;
-        border-radius: 0px;
         height: 45px;
         position: relative;
-        /* border: 0; */
 
         line-height: 24px;
         letter-spacing: 0.4px;
 
+        border-radius: 0px;
         border-width: thin;
         border-style: solid;
         
