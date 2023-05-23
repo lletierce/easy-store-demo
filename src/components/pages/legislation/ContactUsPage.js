@@ -53,9 +53,7 @@ const ContactUsPageStyled = styled.div`
                         "footer";
     grid-template-rows:    64px 1fr 132px;
 
-    .content{
-        /* background: orange; */
-        
+    .content{        
         max-width: 1200px;
         width: 100%;
         box-sizing: border-box;
@@ -65,25 +63,25 @@ const ContactUsPageStyled = styled.div`
         padding: 75px 15px 0;
 
         .title-contactUs{
-            margin: 0 0 30px;
-            font-size: 40px;
+            margin: 0 0 ${theme.spacing.lg};
+            font-size: calc(${theme.fonts.size.P2}*2);
             text-transform: capitalize;
             letter-spacing: 0.6px;
         
             @media screen and (max-width: 749px) {
-                font-size: 30px;
-                margin-bottom: 20px;
-                line-height: 39px;
+                font-size: calc(${theme.fonts.size.P2}*1.5);
+                margin-bottom: calc(${theme.spacing.sm}*2);
+                line-height: calc(${theme.fonts.size.XXS}*3.9);
             }
         }
     }
 
     .content .btn_send{
-        margin-top: 30px;
+        margin-top: ${theme.spacing.lg};
     }
 
     .content .title-contactUs{
-        margin-bottom: 20px;
+        margin-bottom: calc(${theme.spacing.sm}*2);
     }
 
     @media screen and (min-width: 750px) {
@@ -94,11 +92,11 @@ const ContactUsPageStyled = styled.div`
         .content .contact_fields{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 20px;
+            column-gap: calc(${theme.spacing.sm}*2);
         }
 
         .content .btn_send{
-            margin-top: 40px;
+            margin-top: calc(${theme.spacing.sm}*4);
         }
     }
 
@@ -111,7 +109,7 @@ const ContactUsPageStyled = styled.div`
         }
 
         .content .title-contactUs{
-            margin-bottom: 30px;
+            margin-bottom: ${theme.spacing.lg};
         }
   }
 `;
