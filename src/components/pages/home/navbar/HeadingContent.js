@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 import Logo from '../Logo'
+import { Link } from 'react-router-dom';
 
 export default function HeadingContent() {
   return (
     <HeadingContentStyled>
-        <Logo />
+        <Link to={"/"}>
+          <Logo />
+        </Link>
     </HeadingContentStyled>
   )
 }
@@ -12,6 +15,11 @@ export default function HeadingContent() {
 const HeadingContentStyled = styled.div`
   display: flex;
   justify-content: center;
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
 
   @media screen and (min-width: 990px) {
     display: flex;
