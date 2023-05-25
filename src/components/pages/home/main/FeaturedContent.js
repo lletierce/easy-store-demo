@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import Card from '../../../reusable-ui/Card/Card'
+import Card from '../../../reusable-ui/card/Card'
 import { formatPrice} from "../../../../utils/maths"
 
 

@@ -18,8 +18,6 @@ export default function FooterLegislationPage({ title, content }) {
 }
 
 const FooterLegislationPageStyled = styled.div`
-    /* background: pink; */
-
     height: 100vh;
     display: grid;
     grid-template-areas:  "header"
