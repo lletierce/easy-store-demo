@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "./components/pages/home/HomePage"
+import LoginPage from "./components/pages/account/login/LoginPage"
 import ErrorPage from "./components/pages/error/ErrorPage"
 import TermsAndConditionsPage from "./components/pages/legislation/termsAndConditions/TermsAndConditionsPage"
 import PrivacyPolicyPage from "./components/pages/legislation/privacyPolicy/PrivacyPolicyPage"
@@ -15,6 +16,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />}/>
+        <Route path="/account/login" element={<LoginPage />}/>
         <Route path="/terms-of-services" element={<TermsAndConditionsPage/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicyPage/>}/>
         <Route path="/shipping-payment-info" element={<ShippingAndRefundsPage/>}/>
