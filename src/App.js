@@ -6,7 +6,7 @@ import PrivacyPolicyPage from "./components/pages/legislation/privacyPolicy/Priv
 import ShippingAndRefundsPage from "./components/pages/legislation/shippingAndRefunds/ShippingAndRefundsPage"
 import LegalMentionsPage from "./components/pages/legislation/legalMentions/LegalMentionsPage"
 import FAQPage from "./components/pages/legislation/faq/FAQPage"
-import ContactUsPage from "./components/pages/legislation/ContactUsPage"
+import ContactUsPage from "./components/pages/legislation/contactUs/ContactUsPage"
 import ScrollToTop from "./utils/ScrollToTop"
 
 function App() {
