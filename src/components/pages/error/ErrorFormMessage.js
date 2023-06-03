@@ -4,16 +4,17 @@ import Icon from '../../reusable-ui/Icon'
 import styled from 'styled-components'
 import { theme } from '../../../theme'
 
-export default function ErrorFormMessage() {
+export default function ErrorFormMessage({ className }) {
   return (
-    <ErrorFormMessageStyled>
+    <ErrorFormMessageStyled className={className}>
         <div className="error-message-title">
             <Icon icon={<MdError/>} className={"error-message-icon"}/>
             <h2> Please adjust the following :</h2>
         </div>
         <div className="error-message-list">
             <ul>
-                <li>Email is invalid</li>
+                {/* <li>Email is invalid</li> */}
+                <li>Incorrect email or password.</li>
             </ul>
         </div>
     </ErrorFormMessageStyled>
@@ -56,7 +57,7 @@ const ErrorFormMessageStyled = styled.div`
 
         ul{
             
-            padding-left: calc(${theme.spacing.sm}*2);
+            padding-left: calc(${theme.spacing.sm}*4.4);
             margin: 0;
 
             font-family: ${theme.fonts.family.primary};
