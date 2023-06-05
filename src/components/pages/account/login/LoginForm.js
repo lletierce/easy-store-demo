@@ -23,7 +23,7 @@ export default function LoginForm() {
         <TextInput label={'Password'} type={"Password"} className={"last-field"}/>
         <a className="recover-link" href="#">Forgot your password?</a>
         <PrimaryButton label={"Sign in"} className={"btn_signin"} />
-        <a className="register-link" href="#">Create account</a>
+        <div className="register-link-wrap"><a className="register-link" href="#">Create account</a></div>
     </LoginFormStyled>
   )
 }
@@ -57,7 +57,7 @@ const LoginFormStyled = styled.form`
     margin: calc(${theme.spacing.sm}*4) auto 15px;
   }
 
-  .register-link{
+  .register-link-wrap{
     display: flex;
     justify-content: center;
   }

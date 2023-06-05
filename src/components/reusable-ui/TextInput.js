@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
 
-export default function TextInput({type = "text", label }) {
+export default function TextInput({type = "text", label, className }) {
     // state
     const [value, setValue] = useState('');
 
@@ -13,7 +13,7 @@ export default function TextInput({type = "text", label }) {
 
     // rendering
     return (
-    <TextInputStyled>
+    <TextInputStyled className={className}>
         <input type={type} value={value} onChange={handleChange} />
         <label className={value && 'filled'}>
             {label}
