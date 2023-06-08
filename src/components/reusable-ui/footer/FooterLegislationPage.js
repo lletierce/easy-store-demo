@@ -7,23 +7,23 @@ import styled from 'styled-components'
 export default function FooterLegislationPage({ title, content }) {
   return (
     <FooterLegislationPageStyled>
-        <Header/>
+        {/* <Header/> */}
         <div className="content">
             <Title value={title} className={"title-page"}/>
             {content}
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </FooterLegislationPageStyled>
   )
 }
 
 const FooterLegislationPageStyled = styled.div`
-    height: 100vh;
+    /* height: 100vh;
     display: grid;
     grid-template-areas:  "header"
                         "maincontent"
                         "footer";
-    grid-template-rows:    64px 1fr 132px;
+    grid-template-rows:    64px 1fr 132px; */
 
     .content{
         max-width: 1200px;
@@ -68,7 +68,7 @@ const FooterLegislationPageStyled = styled.div`
 }
 
 @media screen and (min-width: 990px) {
-grid-template-rows: 84px 1fr 132px;
+/* grid-template-rows: 84px 1fr 132px; */
 
 .content{
   max-width: 726px;

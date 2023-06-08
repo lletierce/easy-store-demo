@@ -7,7 +7,7 @@ import ErrorFormMessage from '../../error/ErrorFormMessage';
 
 export default function LoginForm() {
   // state
-  const [isError, setIsError] = useState(true)
+  const [isError, setIsError] = useState(false)
 
   // comportement
   const handleSubmit = (event) => { 

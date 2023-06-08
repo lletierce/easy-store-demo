@@ -1,20 +1,20 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
 
-export default function TextInput({type = "text", label, className }) {
+
+export default function TextInput({type = "text", label, name, value, onChange, className }) {
     // state
-    const [value, setValue] = useState('');
+    // const [value, setValue] = useState('');
 
     // comportement
-    function handleChange(e){
-        setValue(e.target.value);
-    }
+    // function handleChange(e){
+    //     setValue(e.target.value);
+    // }
 
     // rendering
     return (
     <TextInputStyled className={className}>
-        <input type={type} value={value} onChange={handleChange} />
+        <input type={type} value={value} onChange={onChange} name={name}/>
         <label className={value && 'filled'}>
             {label}
         </label>

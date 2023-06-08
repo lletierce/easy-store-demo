@@ -1,20 +1,19 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
 
-export default function TextAreaInput( { label = "TextAreaLabel" }) {
+export default function TextAreaInput( { label = "TextAreaLabel", name, value, onChange }) {
     // state
-    const [value, setValue] = useState('');
+    // const [value, setValue] = useState('');
 
     // comportement
-    function handleChange(e){
-        setValue(e.target.value);
-    }
+    // function handleChange(e){
+    //     setValue(e.target.value);
+    // }
     
     // rendering
     return (
     <TextAreaInputStyled>
-        <textarea value={value} onChange={handleChange} />
+        <textarea value={value} onChange={onChange} name={name}/>
         <label className={value && 'filled'}>
             {label}
         </label>
